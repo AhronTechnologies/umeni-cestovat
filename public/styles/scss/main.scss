@@ -10,7 +10,7 @@ $blogCardPadding: 30px;
   }
 }
 
-@mixin contianer($width: 1360px) {
+@mixin container($width: 1360px) {
   max-width: $width;
   width: 100%;
   margin: auto;
@@ -21,6 +21,8 @@ $blogCardPadding: 30px;
   margin: 0;
   box-sizing: border-box;
   outline: none !important;
+  font-family: 'Roboto', sans-serif;
+
 }
 body,
 html {
@@ -38,7 +40,7 @@ html {
 
 main {
   nav {
-    @include contianer();
+    @include container();
     position: fixed;
     z-index: 100;
     top: 0;
@@ -108,7 +110,7 @@ main {
     }
   }
   .blog {
-    @include contianer(1500px);
+    @include container(1500px);
     margin-top: 50px;
     margin-bottom: 50px;
     &-category-selector {
@@ -192,7 +194,7 @@ main {
     }
   }
   .info {
-    @include contianer(1500px);
+    @include container(1500px);
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 60px;
@@ -226,7 +228,7 @@ main {
 footer {
   padding-top: 300px;
   text-align: center;
-  @include contianer(1000px);
+  @include container(1000px);
   display: flex;
   flex-direction: column;
   .logo{
